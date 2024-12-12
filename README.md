@@ -1,8 +1,8 @@
-# Nix Developer Environments 🚀
+# Nix Developer Environments
 
 Welcome to the Nix Developer Environments repository! This collection provides ready-to-use development environments for various programming languages, all managed with Nix flakes. Say goodbye to setup headaches and start coding faster.
 
-## Available Environments 🌐
+## Available Environments
 
 - **Go**
 - **Java**
@@ -39,11 +39,11 @@ git clone https://github.com/Vover/Nix-Developer-environments.git
 #### Setup
 
 ```sh
-cd Nix-Developer-environments/dev-cli
-cargo build --release
-export DEV_REPO_PATH=/path/to/this/repo
-cp target/release/dev-cli ~/.local/bin/dev-cli
-dev-cli <environment> [--repo /path/to/repo]
+cd Nix-Developer-environments/dev-cli 
+cargo build --release                             # build the project
+export DEV_REPO_PATH=/path/to/this/repo           # to help find your nix declarations
+cp target/release/dev-cli ~/.local/bin/dev-cli    # copy the compiled binary to path
+dev-cli <environment> [--repo /path/to/repo]      # use!! 
 ```
 
 #### Example
@@ -61,7 +61,7 @@ cd Nix-Developer-environments/Rust_dev_env
 nix develop
 ```
 
-## Modifying the Environments 🛠️
+## Modifying the Environments 
 
 Each environment is defined in its respective `flake.nix` file. To customize:
 
@@ -69,17 +69,17 @@ Each environment is defined in its respective `flake.nix` file. To customize:
 2. Add or remove packages in the `buildInputs` section.
 3. Modify `shellHook` for environment-specific configurations.
 
-## Tweak to Your Preference 🎨
+## Tweak to Your Preference 
 
 - **Aliases**: Customize or add new aliases in `shellHook`.
 - **Environment Variables**: Set additional variables as needed.
 - **Tools**: Add new development tools by including them in `buildInputs`.
 
-## Contributing 🤝
+## Contributing 
 
 Contributions are welcome! Open an issue or submit a pull request with your improvements or additional environments.
 
-## License 📄
+## License 
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
