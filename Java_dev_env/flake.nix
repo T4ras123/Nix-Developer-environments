@@ -21,16 +21,12 @@
             pkgs.gradle
 
             # Development tools
-            pkgs.eclipse-jdt  # Java Development Tools
+            pkgs.eclipse-mat  # Java Development Tools
             pkgs.git
             pkgs.lazygit
             pkgs.neovim
             pkgs.tmux
             pkgs.direnv
-
-            # Testing frameworks
-            pkgs.junit
-            pkgs.mockito
 
             # Helpful utilities
             pkgs.just
